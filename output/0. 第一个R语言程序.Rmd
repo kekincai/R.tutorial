@@ -1,0 +1,20 @@
+---
+title: "0. 第一个R语言程序"
+author: "kejincai"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+一般的编程教程的第一个语句都会选择输出"Hello World!",这里自然也不能免俗。
+
+```{r echo=TRUE}
+message("Hello World!")
+print("Hello World!")
+cat("Hello World!", "\n")
+```
+
+通常情况下会选择使用**message**函数来输出消息。因为R语言是一门脚本语言，所以在执行的时候需要多加输出消息来判断当前程序执行进度。
